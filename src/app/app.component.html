@@ -1,0 +1,56 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div style="text-align:center" class="jumbotron">
+    <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-6">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="destinatario_nome" class="col-sm-4 control-label">Destinatário</label>
+        <div class="col-sm-8">
+          <input type="email" class="form-control" id="destinatario_nome" placeholder="Nome de quem vai executar">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="titulo_tarefa" class="col-sm-4 control-label">Título da Tarefa</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="titulo_tarefa" placeholder="Título da Tarefa">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="descricao_tarefa" class="col-sm-4 control-label">Descrição da Tarefa</label>
+        <div class="col-sm-8">
+          <textarea class="form-control" rows="3" id="descricao_tarefa"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="solicitante_nome" class="col-sm-4 control-label">Solicitante</label>
+        <div class="col-sm-8">
+          <input type="email" class="form-control" id="solicitante_nome" placeholder="Seu nome">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-4 control-label">{{ data | date:'dd/MM/yyyy HH:mm'}}</div>
+        <div class="col-sm-8">
+          <button type="submit" class="btn btn-success">Gravar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Como fazer:</h3>
+      </div>
+      <div class="panel-body">
+        <p>Insira o destinatário e o título da tarefa, em seguida descreva em detalhes tudo o que você precisa. Ao final, informe seu nome e clique no botão "Gravar".</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="well text-right">Very Well Done!</div>
+</div>
